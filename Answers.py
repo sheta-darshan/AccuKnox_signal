@@ -213,15 +213,15 @@ class Rectangle:
         self.length = length
         self.width = width
 
-    def get_attributes(self):
-        # Return length first, then width
-        return [{"length": self.length}, {"width": self.width}]
-
+    def __iter__(self):
+        # Yield the length first, then the width
+        yield {"length": self.length}
+        yield {"width": self.width}
 
 # Example usage:
 rect = Rectangle(10, 5)
 
-
-# Iterating over the attributes using the custom function
-for attribute in rect.get_attributes():
+# Iterating over the instance
+for attribute in rect:
     print(attribute)
+
