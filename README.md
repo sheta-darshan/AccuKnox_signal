@@ -78,6 +78,6 @@ This will trigger a database transaction and demonstrate the signal's behavior w
 - **Answer 1**: Demonstrates that Django signals are executed synchronously by default.
 - **Answer 2**: Confirms that Django signals run in the same thread as the caller.
 - **Answer 3**: Shows that Django signals run within the same database transaction as the caller.
-- **Answer 4**: Check out the (Signal_project\Answers.py).
+- **Answer 4**: Check out the (Answers.py).
 
 ---
